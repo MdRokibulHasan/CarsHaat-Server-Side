@@ -40,7 +40,7 @@ async function run() {
             res.json(result)
 
         });
-
+        // update user
         app.put('/users', async (req, res) => {
             const user = req.body;
             const filter = { email: user.email };
